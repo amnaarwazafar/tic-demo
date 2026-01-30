@@ -1,11 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Frisør – Bergen</title>
+  </head>
+
+  <body class="bg-white text-gray-900 font-sans">
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+      <h1 class="text-5xl font-bold mb-4">Tic Frisør</h1>
+      <p class="text-xl mb-6">Moderne frisørsalong i Bergen</p>
+
+      <p class="mb-2">📍 Nattlandsveien 1, 5093 Bergen</p>
+      <p class="mb-6">📞 46 76 19 66</p>
+
+      <a
+        href="tel:46761966"
+        class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
+      >
+        Bestill time
+      </a>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 py-20">
+      <h2 class="text-3xl font-semibold mb-4">Om salongen</h2>
+      <p class="text-gray-700">
+        Tic er en moderne frisørsalong i Bergen med fokus på kvalitet, presisjon og personlig service.
+        Med erfarne frisører og fornøyde kunder tilbyr vi behandlinger tilpasset deg.
+      </p>
+    </section>
+
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-3xl font-semibold mb-6">Tjenester</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-800">
+          <li>Dameklipp</li>
+          <li>Herreklipp</li>
+          <li>Farge & striper</li>
+          <li>Styling</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Kundeanmeldelser</h2>
+      <p>⭐ 4,9 / 5 basert på 166 Google-anmeldelser</p>
+    </section>
+
+    <section class="bg-black text-white py-20">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Kontakt</h2>
+        <p>Nattlandsveien 1, 5093 Bergen</p>
+        <p>46 76 19 66</p>
+      </div>
+    </section>
+
+  </body>
+</html>
