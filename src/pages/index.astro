@@ -1,75 +1,73 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-<Layout title="Salong Halko – Frisørsalong i Bergen">
+<Layout title="Habibi Barber Shop – Barber shop i Bergen">
 
 <!-- HERO -->
-<section class="min-h-screen bg-neutral-50 flex items-center">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+<section class="relative h-screen w-full bg-black">
+  <img
+    src="/images/habibi-lion.jpg"
+    alt="Habibi Barber Shop"
+    class="absolute inset-0 h-full w-full object-cover opacity-80"
+  />
 
-    <!-- Text -->
-    <div>
-      <p class="uppercase tracking-[0.25em] text-sm text-neutral-500 mb-6">
-        Frisørsalong i Bergen
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+
+  <div class="relative z-10 flex h-full items-end">
+    <div class="max-w-6xl mx-auto px-6 pb-24 text-white">
+      <p class="uppercase tracking-[0.35em] text-sm text-neutral-300 mb-4">
+        Barber shop i Bergen
       </p>
 
-      <h1 class="text-6xl font-light text-neutral-900 mb-8">
-        Salong Halko
+      <h1 class="text-6xl md:text-7xl font-extrabold mb-6">
+        Habibi Barber Shop
       </h1>
 
-      <p class="text-lg text-neutral-600 leading-relaxed mb-10 max-w-md">
-        En rolig og moderne frisørsalong med fokus på kvalitet,
-        presisjon og personlig service.
+      <p class="text-lg md:text-xl text-neutral-200 max-w-xl mb-12">
+        Urban barber shop med fokus på presisjon, stil og detaljer.
       </p>
 
       <a
         href="#kontakt"
-        class="inline-block border border-neutral-900 px-10 py-4 text-sm uppercase tracking-widest hover:bg-neutral-900 hover:text-white transition"
+        class="inline-block bg-amber-500 text-black px-12 py-4 text-sm uppercase tracking-widest hover:bg-amber-400 transition"
       >
-        Kontakt oss
+        Book time
       </a>
     </div>
-
-    <!-- Image -->
-    <img
-      src="/images/salon.jpg"
-      alt="Salong Halko"
-      class="w-full h-[520px] object-cover"
-    />
-
   </div>
 </section>
 
 <!-- INTRO -->
-<section class="py-32 bg-white">
-  <div class="max-w-3xl mx-auto px-6 text-center">
-    <p class="text-2xl font-light leading-relaxed text-neutral-800">
-      Et sted for ro, detaljer og personlig stil.
+<section class="py-28 bg-neutral-900 text-neutral-300">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <p class="text-2xl font-light leading-relaxed">
+      Mer enn en klipp.  
+      En stil. Et uttrykk. En opplevelse.
     </p>
   </div>
 </section>
 
-<!-- OM -->
-<section class="py-32 bg-neutral-50">
+<!-- OM OSS -->
+<section class="py-32 bg-black">
   <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
 
     <div>
-      <h2 class="text-3xl font-light mb-8 text-neutral-900">
-        Om Salong Halko
+      <h2 class="text-3xl font-semibold mb-8 text-white">
+        Om Habibi
       </h2>
 
-      <p class="text-neutral-600 leading-relaxed text-lg">
-        Salong Halko er en lokal frisørsalong i Bergen, kjent for høy kvalitet
-        og fornøyde kunder.
+      <p class="text-neutral-400 leading-relaxed text-lg">
+        Habibi Barber Shop er en moderne barber shop i Bergen, kjent for høy
+        kvalitet og fornøyde kunder.
         <br /><br />
-        Vi legger stor vekt på detaljer, komfort og et avslappende miljø,
-        og tilbyr behandlinger tilpasset hver enkelt kunde.
+        Vi kombinerer klassisk barberhåndverk med en moderne, urban stil.
+        Hos oss handler det om detaljer, presisjon og attitude.
       </p>
     </div>
 
     <img
-      src="/images/hairwash.jpg"
-      alt="Hårvask hos Salong Halko"
+      src="/images/habibi-look.jpg"
+      alt="Stil hos Habibi Barber Shop"
       class="w-full h-[420px] object-cover"
     />
 
@@ -77,38 +75,46 @@ import Layout from "../layouts/Layout.astro";
 </section>
 
 <!-- TJENESTER -->
-<section class="py-32 bg-white">
-  <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-3xl font-light mb-16 text-center text-neutral-900">
+<section class="py-32 bg-neutral-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-semibold mb-16 text-center text-white">
       Tjenester
     </h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 text-center text-lg text-neutral-700">
-      <div>Dameklipp</div>
-      <div>Herreklipp</div>
-      <div>Hårstyling</div>
-      <div>Farge & behandling</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
+      <div class="border border-neutral-700 py-10 text-neutral-300">
+        Herreklipp
+      </div>
+      <div class="border border-neutral-700 py-10 text-neutral-300">
+        Fade
+      </div>
+      <div class="border border-neutral-700 py-10 text-neutral-300">
+        Skjegg & forming
+      </div>
+      <div class="border border-neutral-700 py-10 text-neutral-300">
+        Styling
+      </div>
     </div>
   </div>
 </section>
 
 <!-- KONTAKT -->
-<section id="kontakt" class="py-32 bg-neutral-900 text-neutral-200">
+<section id="kontakt" class="py-32 bg-black text-neutral-300">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl font-light mb-12 text-white">
+    <h2 class="text-3xl font-semibold mb-12 text-white">
       Kontakt
     </h2>
 
-    <p class="mb-4 text-neutral-300">
-      📍 Michael Krohns gate 22, 5057 Bergen
+    <p class="mb-4">
+      📍 Storetveitvegen 1, 5067 Bergen
     </p>
-    <p class="mb-12 text-neutral-300">
-      📞 46 76 19 66
+    <p class="mb-12">
+      📞 48 64 08 83
     </p>
 
     <a
-      href="tel:46761966"
-      class="inline-block border border-neutral-400 px-12 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-neutral-900 transition"
+      href="tel:48640883"
+      class="inline-block border border-neutral-500 px-12 py-4 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition"
     >
       Ring oss
     </a>
