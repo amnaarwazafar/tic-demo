@@ -3,28 +3,34 @@ import Layout from "../layouts/Layout.astro";
 ---
 <Layout title="Habibi Barber Shop – Bergen">
 
+<!-- HERO -->
 <section class="relative h-screen w-full bg-black">
   <img
     src="/images/habibi-lion.jpg"
     alt="Habibi Barber Shop"
-    class="absolute inset-0 h-full w-full object-cover opacity-80"
+    class="absolute inset-0 w-full h-full object-cover"
   />
-  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
-  <div class="relative z-10 flex h-full items-end">
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative z-10 h-full flex items-end">
     <div class="max-w-6xl mx-auto px-6 pb-24 text-white">
-      <p class="uppercase tracking-[0.35em] text-sm text-neutral-300 mb-4">
+      <p class="uppercase tracking-[0.35em] text-sm mb-4">
         Barber shop i Bergen
       </p>
+
       <h1 class="text-6xl md:text-7xl font-extrabold mb-6">
         Habibi Barber Shop
       </h1>
+
       <p class="text-lg text-neutral-200 max-w-xl mb-12">
-        Urban barber shop med fokus på presisjon, stil og detaljer.
+        Urban barber shop med fokus på presisjon,
+        stil og detaljer.
       </p>
+
       <a
         href="#kontakt"
-        class="inline-block bg-amber-500 text-black px-12 py-4 text-sm uppercase tracking-widest hover:bg-amber-400 transition"
+        class="inline-block bg-amber-500 text-black px-12 py-4 uppercase tracking-widest text-sm hover:bg-amber-400 transition"
       >
         Book time
       </a>
@@ -32,9 +38,47 @@ import Layout from "../layouts/Layout.astro";
   </div>
 </section>
 
-<section id="kontakt" class="py-32 bg-black text-neutral-300 text-center">
-  <p class="mb-4">📍 Bergen</p>
-  <p>📞 48 64 08 83</p>
+<!-- OM -->
+<section class="py-28 bg-neutral-900 text-neutral-300">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-semibold mb-8 text-white">Om oss</h2>
+    <p class="leading-relaxed text-lg">
+      Habibi Barber Shop kombinerer klassisk barberhåndverk
+      med en moderne, urban stil. Hos oss handler det om
+      detaljer, attitude og presisjon.
+    </p>
+  </div>
+</section>
+
+<!-- BILDE + TEKST -->
+<section class="py-24 bg-black">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    <img
+      src="/images/habibi-look.jpg"
+      alt="Stil hos Habibi"
+      class="w-full h-[420px] object-cover"
+    />
+
+    <p class="text-neutral-300 text-lg leading-relaxed">
+      Enten du kommer for klipp, fade eller skjegg,
+      leverer vi et resultat som matcher både stil og personlighet.
+    </p>
+
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section id="kontakt" class="py-32 bg-neutral-900 text-neutral-100 text-center">
+  <p class="mb-4">📍 Storetveitvegen 1, 5067 Bergen</p>
+  <p class="mb-10">📞 48 64 08 83</p>
+
+  <a
+    href="tel:48640883"
+    class="inline-block border border-neutral-400 px-12 py-4 uppercase tracking-widest text-sm hover:bg-white hover:text-black transition"
+  >
+    Ring oss
+  </a>
 </section>
 
 </Layout>
