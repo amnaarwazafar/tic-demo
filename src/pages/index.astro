@@ -1,40 +1,40 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-<Layout title="Salong Halko – Frisørsalong i Bergen">
+<Layout title="Habibi Barber Shop – Bergen">
 
-<section class="min-h-screen bg-neutral-50 flex items-center">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
-    <div>
-      <p class="uppercase tracking-[0.25em] text-sm text-neutral-500 mb-6">
-        Frisørsalong i Bergen
+<section class="relative h-screen w-full bg-black">
+  <img
+    src="/images/habibi-lion.jpg"
+    alt="Habibi Barber Shop"
+    class="absolute inset-0 h-full w-full object-cover opacity-80"
+  />
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+
+  <div class="relative z-10 flex h-full items-end">
+    <div class="max-w-6xl mx-auto px-6 pb-24 text-white">
+      <p class="uppercase tracking-[0.35em] text-sm text-neutral-300 mb-4">
+        Barber shop i Bergen
       </p>
-      <h1 class="text-6xl font-light text-neutral-900 mb-8">
-        Salong Halko
+      <h1 class="text-6xl md:text-7xl font-extrabold mb-6">
+        Habibi Barber Shop
       </h1>
-      <p class="text-lg text-neutral-600 mb-10 max-w-md">
-        En rolig og moderne frisørsalong med fokus på kvalitet,
-        presisjon og personlig service.
+      <p class="text-lg text-neutral-200 max-w-xl mb-12">
+        Urban barber shop med fokus på presisjon, stil og detaljer.
       </p>
       <a
         href="#kontakt"
-        class="inline-block border border-neutral-900 px-10 py-4 text-sm uppercase tracking-widest hover:bg-neutral-900 hover:text-white transition"
+        class="inline-block bg-amber-500 text-black px-12 py-4 text-sm uppercase tracking-widest hover:bg-amber-400 transition"
       >
-        Kontakt oss
+        Book time
       </a>
     </div>
-
-    <img
-      src="/images/salon.jpg"
-      alt="Salong Halko"
-      class="w-full h-[520px] object-cover"
-    />
   </div>
 </section>
 
-<section id="kontakt" class="py-32 bg-neutral-900 text-neutral-200 text-center">
+<section id="kontakt" class="py-32 bg-black text-neutral-300 text-center">
   <p class="mb-4">📍 Bergen</p>
-  <p>📞 Kontakt oss</p>
+  <p>📞 48 64 08 83</p>
 </section>
 
 </Layout>
