@@ -1,133 +1,102 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
-<Layout>
 
-<!-- HERO -->
-<section class="relative h-screen w-full overflow-hidden">
+<Layout title="Salong Halko – Frisørsalong i Bergen">
+  <!-- HERO -->
+  <section class="relative h-screen w-full">
+    <img
+      src="/salon.jpg"
+      alt="Salong Halko"
+      class="absolute inset-0 h-full w-full object-cover"
+    />
 
-  <!-- Background image -->
-  <img
-    src="/images/salon.jpg"
-    alt="Tic Frisør Bergen"
-    class="absolute inset-0 w-full h-full object-cover"
-  />
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/40"></div>
 
-  <!-- Gradient overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+    <div class="relative z-10 flex h-full items-center justify-center">
+      <div class="text-center text-white px-6">
+        <h1 class="text-5xl md:text-7xl font-light tracking-wide mb-6">
+          Salong Halko
+        </h1>
+        <p class="text-lg md:text-xl text-neutral-200 mb-10">
+          En rolig frisørsalong i Bergen med fokus på kvalitet og personlig service
+        </p>
 
-  <!-- Content -->
-  <div class="relative z-10 h-full flex items-center justify-center text-center px-6">
-    <div class="fade-up max-w-2xl">
-      <p class="uppercase tracking-[0.35em] text-sm text-neutral-200 mb-8">
-        Frisørsalong i Bergen
+        <a
+          href="#kontakt"
+          class="inline-block border border-white px-10 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition"
+        >
+          Kontakt oss
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OM -->
+  <section class="py-28 bg-neutral-50">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-light mb-8">Om Salongen</h2>
+      <p class="text-neutral-600 leading-relaxed text-lg">
+        Salong Halko er en lokal frisørsalong i Bergen, kjent for høy kvalitet og
+        fornøyde kunder. Med fokus på ro, presisjon og personlig service tilbyr vi
+        behandlinger tilpasset hver enkelt kunde.
       </p>
+    </div>
+  </section>
 
-      <h1 class="text-[clamp(3.5rem,9vw,6.5rem)] font-light text-white mb-10">
-        Tic
-      </h1>
+  <!-- BILDESEKSJON -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
+      <img
+        src="/hairwash.jpg"
+        alt="Hårvask hos Salong Halko"
+        class="w-full h-[420px] object-cover"
+      />
+      <div class="flex items-center">
+        <p class="text-neutral-600 text-lg leading-relaxed">
+          Vi legger stor vekt på detaljer, komfort og et avslappende miljø.
+          Enten du kommer for klipp, styling eller farge, ønsker vi at hvert
+          besøk skal føles personlig og profesjonelt.
+        </p>
+      </div>
+    </div>
+  </section>
 
-      <p class="text-lg text-neutral-200 leading-relaxed mb-14">
-        En stilren frisørsalong med fokus på presisjon,
-        kvalitet og personlig uttrykk.
+  <!-- TJENESTER -->
+  <section class="py-28 bg-neutral-100">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-light mb-12">Tjenester</h2>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg text-neutral-700">
+        <li>Dameklipp</li>
+        <li>Herreklipp</li>
+        <li>Hårstyling</li>
+        <li>Farge & behandling</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section
+    id="kontakt"
+    class="py-32 bg-neutral-900 text-neutral-200"
+  >
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-light mb-10 text-white">Kontakt</h2>
+
+      <p class="mb-4 text-neutral-300">
+        📍 Michael Krohns gate 22, 5057 Bergen
+      </p>
+      <p class="mb-10 text-neutral-300">
+        📞 46 76 19 66
       </p>
 
       <a
-        href="#kontakt"
-        class="inline-block border border-white px-16 py-4 rounded-full text-white hover:bg-white hover:text-black transition"
+        href="tel:46761966"
+        class="inline-block border border-neutral-400 px-10 py-3 text-sm uppercase tracking-widest hover:bg-white hover:text-black transition"
       >
-        Kontakt
+        Ring oss
       </a>
     </div>
-  </div>
-</section>
-
-<!-- STATEMENT -->
-<section class="py-32 bg-white">
-  <div class="max-w-5xl mx-auto px-6 text-center">
-    <p class="text-3xl font-light leading-relaxed text-neutral-800">
-      Hår handler ikke bare om utseende.  
-      Det handler om identitet.
-    </p>
-  </div>
-</section>
-
-<!-- OM -->
-<section class="py-32 bg-[#f7f6f4]">
-  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-24 items-center">
-
-    <div class="fade-up">
-      <h2 class="text-4xl font-light mb-8">
-        Om Tic
-      </h2>
-      <p class="text-neutral-600 leading-relaxed text-lg">
-        Tic er en moderne frisørsalong i Bergen, kjent for
-        presisjon, ro og personlig service.
-        <br /><br />
-        Med et erfarent team og høyt fokus på detaljer,
-        skaper vi uttrykk som varer.
-      </p>
-    </div>
-
-    <div class="relative">
-      <img
-        src="/images/hairwash.jpg"
-        alt="Hårvask hos Tic"
-        class="w-full h-[480px] object-cover rounded-3xl transition-transform duration-700 hover:scale-105"
-      />
-    </div>
-
-  </div>
-</section>
-
-<!-- RATING -->
-<section class="py-32 bg-white">
-  <div class="max-w-4xl mx-auto px-6 text-center fade-up">
-    <p class="text-5xl font-light mb-4 text-neutral-900">4,9</p>
-    <p class="text-neutral-500 mb-2">Google-rating</p>
-    <p class="text-neutral-400 text-sm">
-      Basert på 166 anmeldelser
-    </p>
-  </div>
-</section>
-
-<!-- TJENESTER -->
-<section class="py-32 bg-[#f7f6f4]">
-  <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-4xl font-light mb-20 text-center">
-      Våre tjenester
-    </h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-16 text-center text-lg text-neutral-700">
-      <div>Dameklipp</div>
-      <div>Herreklipp</div>
-      <div>Farge & striper</div>
-      <div>Styling</div>
-    </div>
-  </div>
-</section>
-
-<!-- KONTAKT -->
-<section id="kontakt" class="py-32 bg-neutral-900 text-neutral-100">
-  <div class="max-w-4xl mx-auto px-6 text-center fade-up">
-    <h2 class="text-4xl font-light mb-12">
-      Kontakt
-    </h2>
-
-    <p class="mb-4 text-neutral-300">
-      Nattlandsveien 1, 5093 Bergen
-    </p>
-    <p class="mb-12 text-neutral-300">
-      46 76 19 66
-    </p>
-
-    <a
-      href="tel:46761966"
-      class="inline-block border border-neutral-300 px-16 py-4 rounded-full hover:bg-white hover:text-neutral-900 transition"
-    >
-      Ring oss
-    </a>
-  </div>
-</section>
-
+  </section>
 </Layout>
